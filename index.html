@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня "Утро" - Уютное место для любителей кофе</title>
+    <meta name="description" content="Кофейня Утро - лучший кофе в городе, свежая выпечка и уютная атмосфера">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <h1 class="logo">Утро</h1>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#menu" class="nav-link">Меню</a></li>
+                <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content container">
+                <h2 class="hero-title">Начни своё утро с настоящего кофе</h2>
+                <p class="hero-subtitle">Авторские напитки, свежая выпечка и атмосфера домашнего уюта</p>
+                <a href="#menu" class="btn btn-primary">Посмотреть меню</a>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="container">
+                <h2 class="section-title">Наше меню</h2>
+                <p class="section-subtitle">Выбери свой идеальный напиток</p>
+                
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-tab="coffee">Кофе</button>
+                    <button class="tab-btn" data-tab="desserts">Десерты</button>
+                    <button class="tab-btn" data-tab="breakfast">Завтраки</button>
+                </div>
+
+                <div class="menu-content">
+                    <div class="tab-content active" data-content="coffee">
+                        <div class="menu-grid">
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Эспрессо</h3>
+                                    <span class="price">120₽</span>
+                                </div>
+                                <p>Классический итальянский эспрессо из отборной арабики</p>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Капучино</h3>
+                                    <span class="price">180₽</span>
+                                </div>
+                                <p>Нежная молочная пенка и крепкий эспрессо</p>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Латте</h3>
+                                    <span class="price">200₽</span>
+                                </div>
+                                <p>Мягкий вкус кофе с молоком в идеальной пропорции</p>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Раф кофе</h3>
+                                    <span class="price">220₽</span>
+                                </div>
+                                <p>Сливочный напиток с ванилью - наша гордость</p>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Флэт уайт</h3>
+                                    <span class="price">210₽</span>
+                                </div>
+                                <p>Двойной эспрессо с бархатистой микропеной</p>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Альтернатива</h3>
+                                    <span class="price">250₽</span>
+                                </div>
+                                <p>Кофе заваренный методом пуровер или кемекс</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" data-content="desserts">
+                        <div class="menu-grid">
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Круассан</h3>
+                                    <span class="price">150₽</span>
+                                </div>
+                                <p>Свежий французский круассан с хрустящей корочкой</p>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Чизкейк</h3>
+                                    <span class="price">280₽</span>
+                                </div>
+                                <p>Нежный сырный торт по классическому рецепту</p>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Тирамису</h3>
+                                    <span class="price">300₽</span>
+                                </div>
+                                <p>Легендарный итальянский десерт с маскарпоне</p>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Эклер</h3>
+                                    <span class="price">180₽</span>
+                                </div>
+                                <p>Заварное пирожное с кремом патисьер</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" data-content="breakfast">
+                        <div class="menu-grid">
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Яичница с беконом</h3>
+                                    <span class="price">320₽</span>
+                                </div>
+                                <p>Глазунья с хрустящим беконом и тостами</p>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Панкейки</h3>
+                                    <span class="price">280₽</span>
+                                </div>
+                                <p>Пышные панкейки с кленовым сиропом и ягодами</p>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Авокадо тост</h3>
+                                    <span class="price">350₽</span>
+                                </div>
+                                <p>Тост с авокадо, яйцом пашот и микрозеленью</p>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Гранола</h3>
+                                    <span class="price">250₽</span>
+                                </div>
+                                <p>Домашняя гранола с греческим йогуртом и фруктами</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title">Что говорят гости</h2>
+                <p class="section-subtitle">Мы ценим каждый отзыв</p>
+                
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="review-rating">★★★★★</div>
+                        <p class="review-text">"Лучшая кофейня в районе! Невероятно вкусный капучино и уютная атмосфера. Теперь это моё любимое место для работы."</p>
+                        <div class="review-author">
+                            <strong>Анна Петрова</strong>
+                            <span>2 дня назад</span>
+                        </div>
+                    </article>
+                    
+                    <article class="review-card">
+                        <div class="review-rating">★★★★★</div>
+                        <p class="review-text">"Отличный кофе и приятный персонал. Круассаны просто тают во рту! Обязательно вернусь ещё."</p>
+                        <div class="review-author">
+                            <strong>Дмитрий Соколов</strong>
+                            <span>неделю назад</span>
+                        </div>
+                    </article>
+                    
+                    <article class="review-card">
+                        <div class="review-rating">★★★★★</div>
+                        <p class="review-text">"Прекрасное место для завтраков! Авокадо тост - это что-то невероятное. И кофе на высоте!"</p>
+                        <div class="review-author">
+                            <strong>Елена Волкова</strong>
+                            <span>2 недели назад</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 class="section-title">Свяжитесь с нами</h2>
+                        <p class="section-subtitle">Мы всегда рады вашим вопросам</p>
+                        
+                        <div class="info-items">
+                            <div class="info-item">
+                                <h3>Адрес</h3>
+                                <p>г. Москва, ул. Тверская, д. 15</p>
+                            </div>
+                            <div class="info-item">
+                                <h3>Телефон</h3>
+                                <p>+7 (495) 123-45-67</p>
+                            </div>
+                            <div class="info-item">
+                                <h3>Email</h3>
+                                <p>hello@utro-cafe.ru</p>
+                            </div>
+                            <div class="info-item">
+                                <h3>Время работы</h3>
+                                <p>Пн-Вс: 08:00 - 22:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                        <div class="form-success"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="logo">Утро</h3>
+                    <p>Кофейня, где каждое утро начинается с улыбки</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li>+7 (495) 123-45-67</li>
+                        <li>hello@utro-cafe.ru</li>
+                        <li>г. Москва, ул. Тверская, 15</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="VK">ВКонтакте</a>
+                        <a href="#" aria-label="Telegram">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Кофейня "Утро". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
